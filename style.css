@@ -1,0 +1,35 @@
+.center {
+margin: auto;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+p, h1, h2 {
+  text-align:center;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+ul {
+  background: grey;
+  padding: 20px;
+}
+
+li {
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+
+* {
+  margin: auto;
+}

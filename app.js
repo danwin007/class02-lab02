@@ -9,7 +9,7 @@ alert('It is a pleasure to meet you ' + userName + '!');
 
 alert('Thanks for visiting my page. Let\'s play a guessing game!');
 
-var danGrad = prompt('True or false, I finished college in 4 years.');
+var danGrad = prompt('True or false, I finished college in 4 years. 1/5');
 danGrad = danGrad.toLowerCase();
 
 if (danGrad === 'false'){
@@ -20,7 +20,7 @@ if (danGrad === 'false'){
   alert('Whoops! You wrong. Hopefully you paid more attention than I did, huh?');
 }
 
-var danBff = prompt('Yes or No, my best friend is named Mellow.');
+var danBff = prompt('Yes or No, my best friend is named Mellow. 2/5');
 danBff = danBff.toLowerCase();
 
 if (danBff === 'yes' || danBff === 'y'){
@@ -31,7 +31,7 @@ if (danBff === 'yes' || danBff === 'y'){
   alert('Sorry. That is incorrect. No pets for anybody :(');
 }
 
-var danDegree = prompt('Yes or No, I graduated with a degree in Ethics');
+var danDegree = prompt('Yes or No, I graduated with a degree in Ethics 3/5');
 danDegree = danDegree.toLowerCase();
 
 if (danDegree === 'no' || danDegree === 'n'){
@@ -42,7 +42,7 @@ if (danDegree === 'no' || danDegree === 'n'){
   alert('Bzzzz! Wrong. Ethics schmethics!');
 }
 
-var danJob = prompt('Yes or No, I used to work in digital advertising sales.');
+var danJob = prompt('Yes or No, I used to work in digital advertising sales. 4/5');
 danJob = danJob.toLowerCase();
 
 if (danJob === 'yes' || danJob === 'y'){
@@ -53,7 +53,7 @@ if (danJob === 'yes' || danJob === 'y'){
   alert('Your answer is wrong. But I wish you were right! That job was meh.');
 }
 
-var danGoal = prompt('Yes or No, I am hoping to get a job in tech!');
+var danGoal = prompt('Yes or No, I am hoping to get a job in tech! 5/5');
 danGoal = danGoal.toLowerCase();
 
 if (danGoal === 'yes' || danGoal === 'y'){
