@@ -5,13 +5,20 @@ margin-right: auto;
 display: block;
 }
 
-p, h1, h2 {
-  text-align:center;
+#about {
+  width: 45%;
+  margin: auto;
+}
+
+#goals {
+  width: 30%;
+  margin: auto;
 }
 
 h1 {
   font-size: 2.5em;
   font-weight: bold;
+  text-align: center;
 }
 
 h2 {
@@ -27,7 +34,6 @@ ul {
 li {
   background: white;
   padding: 10px;
-  text-align: center;
 }
 
 * {
