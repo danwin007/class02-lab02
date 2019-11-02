@@ -120,10 +120,11 @@ for (danAgeAttempt; danAgeAttempt < 5; danAgeAttempt++) {
 // }
 
 // Question 7 Attempt 2
-var danMovie = ['Hook', 'Memento', 'The Shawshank Redemption', 'The Matrix', 'Titan A.E.', 'LOTR', 'Unforgiven', 'SuperBad', 'Brick', 'In Bruges'];
+var danMovie = ['hook', 'memento', 'the shawshank redemption', 'the matrix', 'aitan a.e.', 'lotr', 'unforgiven', 'superbad', 'brick', 'in bruges'];
 
-var movieGuess = prompt('Can you guess my favorite movie? You get 6 attempts. Question 7/7');
+var movieGuess = prompt('Can you guess my favorite movie? You get 6 attempts. I like Sci-fi, Fantasy, kids movies, westerns, and some artsy nonsense. Question 7/7');
 var movieAttempt = 0;
+
 movieGuess = movieGuess.toLowerCase();
 
 for (movieAttempt; movieAttempt < 5; movieAttempt++) {
