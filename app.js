@@ -77,14 +77,15 @@ for (danAgeAttempt; danAgeAttempt < 5; danAgeAttempt++) {
   while (isNaN(danAge)){
     danAge = prompt('That is not a number. Please enter a number');
   }
-  if (danAgeAttempt === 4){
-    console.log('All out of guesses! I am 33.');
-    alert('All out of guesses! I am 33.');
-    break;
-  } else if (danAge == 33){
+  // eslint-disable-next-line eqeqeq
+  if (danAge == 33){
     console.log('Correct! On to the last question.');
     alert('Correct! On to the last question.');
     totalScore++;
+    break;
+  } else if (danAgeAttempt === 4){
+    console.log('All out of guesses! I am 33.');
+    alert('All out of guesses! I am 33.');
     break;
   } else if (danAge < 33){
     console.log('Oops, too low. Aim higher! ' + danAgeAttempt + ' attempts so far.');
@@ -120,25 +121,28 @@ for (danAgeAttempt; danAgeAttempt < 5; danAgeAttempt++) {
 // }
 
 // Question 7 Attempt 2
-var danMovie = ['hook', 'memento', 'the shawshank redemption', 'the matrix', 'aitan a.e.', 'lotr', 'unforgiven', 'superbad', 'brick', 'in bruges'];
+var danMovie = ['hook', 'memento', 'the shawshank redemption', 'the matrix', 'aitan a.e.', 'lord of the rings', 'unforgiven', 'superbad', 'brick', 'in bruges'];
 
-var movieGuess = prompt('Can you guess my favorite movie? You get 6 attempts. I like Sci-fi, Fantasy, kids movies, westerns, and some artsy nonsense. Question 7/7');
+
 var movieAttempt = 0;
 
-movieGuess = movieGuess.toLowerCase();
-
-for (movieAttempt; movieAttempt < 5; movieAttempt++) {
+for (movieAttempt; movieAttempt <= 5; movieAttempt++) {
+  if (movieAttempt === 0) {
+    var movieGuess = prompt('Can you guess one of my favorite movies? You get 6 attempts. I like Sci-fi, Fantasy, kids movies, westerns, and some artsy nonsense. Question 7/7');
+  }
+  movieGuess = movieGuess.toLowerCase();
   if (danMovie.indexOf(movieGuess) > -1) {
     alert('You got it!');
     totalScore++;
     break;
+    // eslint-disable-next-line eqeqeq
+  } else if (movieAttempt == 5){
+    console.log('All out of guesses! My faves are ' + danMovie + '.');
+    alert('All out of guesses! My faves are ' + danMovie + '.');
   } else if (danMovie.indexOf(movieGuess) <= -1){
     console.log('Not quite! Keep guessing! ' + (5 - movieAttempt) + ' guesses left.');
     alert('Not quite! Keep guessing! ' + (5 - movieAttempt) + ' guesses left.');
-    movieGuess = prompt('Try again. What is my fave movie? ' + (5 - movieAttempt) + ' guesses left.');
-  } else if (movieAttempt == 6){
-    console.log('All out of guesses! My fave is Hook!');
-    alert('All out of guesses! My fave is Hook!');
+    movieGuess = prompt('Try again. What is one of my fave movies? ' + (5 - movieAttempt) + ' guesses left.');
   }
 }
 
