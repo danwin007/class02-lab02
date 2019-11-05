@@ -23,7 +23,7 @@ function questionOne(danGrad) {
     //console.log('Whoops! You wrong. Hopefully you paid more attention than I did, huh?');
     alert('Whoops! You wrong. Hopefully you paid more attention than I did, huh?');
   }
-  return danGrad
+  return danGrad;
 }
 questionOne();
 
