@@ -11,10 +11,10 @@ alert('It is a pleasure to meet you ' + userName + '!');
 alert('Thanks for visiting my page. Let\'s play a guessing game!');
 
 // QUESTION ONE
-function questionOne(danGrad) {  
+function questionOne(danGrad) {
   var danGrad = prompt('True or false, I finished college in 4 years. Question 1/7');
   danGrad = danGrad.toLowerCase();
-  
+
   if (danGrad === 'false'){
     //console.log('Correct! I was a super duper senior');
     alert('Correct! I was a super duper senior.');
@@ -32,7 +32,7 @@ questionOne();
 function questionTwo(danBff){
   var danBff = prompt('Yes or No, my best friend is named Mellow. Question 2/7');
   danBff = danBff.toLowerCase();
-  
+
   if (danBff === 'yes' || danBff === 'y'){
     //console.log('Correct! Y\'all should meet and be buds too.');
     alert('Correct! Y\'all should meet and be buds too.');
@@ -43,7 +43,7 @@ function questionTwo(danBff){
   }
   return danBff;
 }
-questionTwo();  
+questionTwo();
 
 
 //QUESTION THREE
@@ -51,7 +51,7 @@ function questionThree(danDegree){
 
   var danDegree = prompt('Yes or No, I graduated with a degree in Ethics. Question 3/7');
   danDegree = danDegree.toLowerCase();
-  
+
   if (danDegree === 'no' || danDegree === 'n'){
     //console.log('Correct! I went for the much more lucrative English degree.');
     alert('Correct! I went for the much more lucrative English degree.');
@@ -67,10 +67,10 @@ questionThree();
 //QUESTION FOUR
 function questionFour(danJob){
 
-  
+
   var danJob = prompt('Yes or No, I used to work in digital advertising sales. Question 4/7');
   danJob = danJob.toLowerCase();
-  
+
   if (danJob === 'yes' || danJob === 'y'){
     //console.log('Correct! I used to sell ads to lawyers. Ugh.');
     alert('Correct! I used to sell ads to lawyers. Ugh.');
@@ -90,7 +90,7 @@ questionFour();
 function questionFive(danGoal){
   var danGoal = prompt('Yes or No, I am hoping to get a job in tech! Question 5/7');
   danGoal = danGoal.toLowerCase();
-  
+
   if (danGoal === 'yes' || danGoal === 'y'){
     //console.log('Correct. Can you halp me plz?');
     alert('Correct. Can you halp me plz?');
@@ -166,10 +166,10 @@ questionSix();
 function questionSeven(danMovie){
 
   var danMovie = ['hook', 'memento', 'the shawshank redemption', 'the matrix', 'aitan a.e.', 'lord of the rings', 'unforgiven', 'superbad', 'brick', 'in bruges'];
-  
-  
+
+
   var movieAttempt = 0;
-  
+
   for (movieAttempt; movieAttempt <= 5; movieAttempt++) {
     if (movieAttempt === 0) {
       var movieGuess = prompt('Can you guess one of my favorite movies? You get 6 attempts. I like Sci-fi, Fantasy, kids movies, westerns, and some artsy nonsense. Question 7/7');
