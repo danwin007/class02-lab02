@@ -23,7 +23,6 @@ function questionOne(danGrad) {
     //console.log('Whoops! You wrong. Hopefully you paid more attention than I did, huh?');
     alert('Whoops! You wrong. Hopefully you paid more attention than I did, huh?');
   }
-  return danGrad;
 }
 questionOne();
 
@@ -41,7 +40,6 @@ function questionTwo(danBff){
     //console.log('Sorry. That is incorrect. No pets for anybody :(');
     alert('Sorry. That is incorrect. No pets for anybody :(');
   }
-  return danBff;
 }
 questionTwo();
 
@@ -60,7 +58,6 @@ function questionThree(danDegree){
     //console.log('Bzzzz! Wrong. Ethics schmethics!');
     alert('Bzzzz! Wrong. Ethics schmethics!');
   }
-  return danDegree;
 }
 questionThree();
 
@@ -77,7 +74,6 @@ function questionFour(danJob){
     //console.log('Your answer is wrong. But I wish you were right! That job was meh.');
     alert('Your answer is wrong. But I wish you were right! That job was meh.');
   }
-  return danJob;
 }
 questionFour();
 
@@ -97,7 +93,6 @@ function questionFive(danGoal){
     console.log('No?! Are you not a believer? C\'mon get on the team!');
     alert('No?! Are you not a believer? C\'mon get on the team!');
   }
-  return danGoal;
 }
 questionFive();
 
@@ -131,7 +126,6 @@ function questionSix(danAge){
       danAge = prompt('Try again! How old am I?');
     }
   }
-  return danAge;
 }
 questionSix();
 
@@ -187,7 +181,6 @@ function questionSeven(danMovie){
       movieGuess = prompt('Try again. What is one of my fave movies? ' + (5 - movieAttempt) + ' guesses left.');
     }
   }
-  return danMovie;
 }
 questionSeven();
 
