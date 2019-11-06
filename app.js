@@ -6,11 +6,12 @@ var totalScore = 0;
 var userName = prompt('Howdy! What is your name?');
 // console.log('It is a pleasure to meet you ' + userName + '!');
 alert('It is a pleasure to meet you ' + userName + '!');
-// var = var.toLowerCase();
+
 
 alert('Thanks for visiting my page. Let\'s play a guessing game!');
 
-// QUESTION ONE
+// Question One - College
+
 function questionOne(danGrad) {
   danGrad = prompt('True or false, I finished college in 4 years. Question 1/7');
   danGrad = danGrad.toLowerCase();
@@ -26,7 +27,7 @@ function questionOne(danGrad) {
 }
 questionOne();
 
-// QUESTION TWO
+// Question Two - BFF
 
 function questionTwo(danBff){
   danBff = prompt('Yes or No, my best friend is named Mellow. Question 2/7');
@@ -43,10 +44,9 @@ function questionTwo(danBff){
 }
 questionTwo();
 
+// Question Three - School
 
-//QUESTION THREE
 function questionThree(danDegree){
-
   danDegree = prompt('Yes or No, I graduated with a degree in Ethics. Question 3/7');
   danDegree = danDegree.toLowerCase();
 
@@ -61,7 +61,8 @@ function questionThree(danDegree){
 }
 questionThree();
 
-//QUESTION FOUR
+// Question 4 - Job
+
 function questionFour(danJob){
   danJob = prompt('Yes or No, I used to work in digital advertising sales. Question 4/7');
   danJob = danJob.toLowerCase();
@@ -77,9 +78,7 @@ function questionFour(danJob){
 }
 questionFour();
 
-
-
-//QUESTION FIVE
+// Question 5 - Goal
 
 function questionFive(danGoal){
   danGoal = prompt('Yes or No, I am hoping to get a job in tech! Question 5/7');
@@ -102,6 +101,7 @@ function questionSix(danAge){
 
   danAge = prompt('Can you guess how old I am? I will give you 4 attempts. Question 6/7');
   var danAgeAttempt = 1;
+
   for (danAgeAttempt; danAgeAttempt < 5; danAgeAttempt++) {
     while (isNaN(danAge)){
       danAge = prompt('That is not a number. Please enter a number');
@@ -129,36 +129,11 @@ function questionSix(danAge){
 }
 questionSix();
 
-
-
-// Question 7 Attempt 1
-// var danMovie = prompt('Can you guess my favorite movie from this list? You get 6 attempts. 1: Hook, 2: Memento, 3: The Shawshank Redemption, 4: The Matrix, 5: Titan A.E., 6: LOTR, 7: Unforgiven, 8: SuperBad, 9: Brick, 10: In Bruges.');
-// var movieAttempt = 0;
-// danMovie = danMovie.toLowerCase();
-
-// for (movieAttempt; movieAttempt < 6; movieAttempt++) {
-
-//   if (movieAttempt === 6){
-//     console.log('All out of guesses! My fave is Hook!');
-//     alert('All out of guesses! My fave is Hook!');
-//     break;
-//   } else if (danMovie === 'hook'){
-//     console.log('Correct! Rufio, Rufio, Ru - Fi - Ooooooo');
-//     alert('Correct! Rufio, Rufio, Ru - Fi - Ooooooo');
-//     break;
-//   } else {
-//     console.log('Wrong. Try again! ' + (5 - movieAttempt) + ' attempts left. Your choices are 1: Hook, 2: Memento, 3: The Shawshank Redemption, 4: The Matrix, 5: Titan A.E., 6: LOTR, 7: Unforgiven, 8: SuperBad, 9: Brick, 10: In Bruges.');
-//     alert('Wrong. Try again! ' + (5 - movieAttempt) + ' attempts left. Your choices are 1: Hook, 2: Memento, 3: The Shawshank Redemption, 4: The Matrix, 5: Titan A.E., 6: LOTR, 7: Unforgiven, 8: SuperBad, 9: Brick, 10: In Bruges.');
-//     danMovie = prompt((5 - movieAttempt) + ' attempts left. Your choices are 1: Hook, 2: Memento, 3: The Shawshank Redemption, 4: The Matrix, 5: Titan A.E., 6: LOTR, 7: Unforgiven, 8: SuperBad, 9: Brick, 10: In Bruges.');
-//   }
-// }
-
-// Question 7 Attempt 2
+// Question 7 - Fave Movie
 
 function questionSeven(danMovie){
 
   danMovie = ['hook', 'memento', 'the shawshank redemption', 'the matrix', 'titan a.e.', 'lord of the rings', 'unforgiven', 'superbad', 'brick', 'in bruges'];
-
 
   var movieAttempt = 0;
 
