@@ -6,21 +6,38 @@ display: block;
 }
 
 #about {
-  width: 45%;
-  margin: auto;
+  width: 30%;
+  margin-left: 10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: lightslategrey;
+  padding: 10px;
+  display: inline-block;
+  float: left;
 }
 
-#goals {
+#exp {
   width: 30%;
-  margin: auto;
+  margin-left: 10px;
+  display: inline-block;
+  padding: 10px;
+  float: left;
 }
 
 #top10 {
   width: 30%;
-  margin: auto;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 5px;
+  float: left;
+}
+
+p {
+  background: white;
 }
 
 h1 {
+  background: white;
   font-size: 2.5em;
   font-weight: bold;
   text-align: center;
@@ -29,11 +46,12 @@ h1 {
 h2 {
   font-size: 1.5em;
   font-weight: bold;
+  background: white;
 }
 
-ul {
-  background: grey;
-  padding: 20px;
+ul, ol {
+  background: lightslategrey;
+  padding: 10px;
 }
 
 li {
