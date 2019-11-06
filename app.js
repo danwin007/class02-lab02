@@ -12,7 +12,7 @@ alert('Thanks for visiting my page. Let\'s play a guessing game!');
 
 // QUESTION ONE
 function questionOne(danGrad) {
-  var danGrad = prompt('True or false, I finished college in 4 years. Question 1/7');
+  danGrad = prompt('True or false, I finished college in 4 years. Question 1/7');
   danGrad = danGrad.toLowerCase();
 
   if (danGrad === 'false'){
@@ -30,7 +30,7 @@ questionOne();
 // QUESTION TWO
 
 function questionTwo(danBff){
-  var danBff = prompt('Yes or No, my best friend is named Mellow. Question 2/7');
+  danBff = prompt('Yes or No, my best friend is named Mellow. Question 2/7');
   danBff = danBff.toLowerCase();
 
   if (danBff === 'yes' || danBff === 'y'){
@@ -49,7 +49,7 @@ questionTwo();
 //QUESTION THREE
 function questionThree(danDegree){
 
-  var danDegree = prompt('Yes or No, I graduated with a degree in Ethics. Question 3/7');
+  danDegree = prompt('Yes or No, I graduated with a degree in Ethics. Question 3/7');
   danDegree = danDegree.toLowerCase();
 
   if (danDegree === 'no' || danDegree === 'n'){
@@ -66,9 +66,7 @@ questionThree();
 
 //QUESTION FOUR
 function questionFour(danJob){
-
-
-  var danJob = prompt('Yes or No, I used to work in digital advertising sales. Question 4/7');
+  danJob = prompt('Yes or No, I used to work in digital advertising sales. Question 4/7');
   danJob = danJob.toLowerCase();
 
   if (danJob === 'yes' || danJob === 'y'){
@@ -88,7 +86,7 @@ questionFour();
 //QUESTION FIVE
 
 function questionFive(danGoal){
-  var danGoal = prompt('Yes or No, I am hoping to get a job in tech! Question 5/7');
+  danGoal = prompt('Yes or No, I am hoping to get a job in tech! Question 5/7');
   danGoal = danGoal.toLowerCase();
 
   if (danGoal === 'yes' || danGoal === 'y'){
@@ -107,13 +105,13 @@ questionFive();
 
 function questionSix(danAge){
 
-  var danAge = prompt('Can you guess how old I am? I will give you 4 attempts. Question 6/7');
+  danAge = prompt('Can you guess how old I am? I will give you 4 attempts. Question 6/7');
   var danAgeAttempt = 1;
   for (danAgeAttempt; danAgeAttempt < 5; danAgeAttempt++) {
     while (isNaN(danAge)){
       danAge = prompt('That is not a number. Please enter a number');
     }
-    // eslint-disable-next-line eqeqeq
+    // eslint-disable-next-line
     if (danAge == 33){
       console.log('Correct! On to the last question.');
       alert('Correct! On to the last question.');
@@ -165,7 +163,7 @@ questionSix();
 
 function questionSeven(danMovie){
 
-  var danMovie = ['hook', 'memento', 'the shawshank redemption', 'the matrix', 'aitan a.e.', 'lord of the rings', 'unforgiven', 'superbad', 'brick', 'in bruges'];
+  danMovie = ['hook', 'memento', 'the shawshank redemption', 'the matrix', 'titan a.e.', 'lord of the rings', 'unforgiven', 'superbad', 'brick', 'in bruges'];
 
 
   var movieAttempt = 0;
@@ -179,7 +177,7 @@ function questionSeven(danMovie){
       alert('You got it!');
       totalScore++;
       break;
-      // eslint-disable-next-line eqeqeq
+      // eslint-disable-next-line
     } else if (movieAttempt == 5){
       console.log('All out of guesses! My faves are ' + danMovie + '.');
       alert('All out of guesses! My faves are ' + danMovie + '.');
